@@ -200,7 +200,7 @@ export const PaywallModal: React.FC<PaywallModalProps> = ({
                   */}
 
                   <Button
-                    className={`w-full ${isRecommended ? 'bg-[#FE5C02] hover:bg-[#e55502] text-white' : ''}`}
+                    className={`w-full ${isRecommended ? 'bg-[#2AABAB] hover:bg-[#228F8F] text-white' : ''}`}
                     variant={isRecommended ? 'default' : 'outline'}
                     disabled={isLoading}
                     onClick={() => handleStripePayment(pkg)}
@@ -276,7 +276,7 @@ export const PaywallModal: React.FC<PaywallModalProps> = ({
 
       <Button
         onClick={handleSuccessClose}
-        className="bg-[#FE5C02] hover:bg-[#e55502] text-white px-8"
+        className="bg-[#2AABAB] hover:bg-[#228F8F] text-white px-8"
       >
         <Sparkles className="w-4 h-4 mr-2" />
         {t('payment.success.continue', 'Continue')}

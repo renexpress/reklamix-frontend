@@ -26,7 +26,7 @@ const HeroCards = () => {
       icon: TrendingUp,
       title: "Measurable ROI",
       description: "Ortalama %320 artış",
-      color: "bg-orange-50 text-orange-600"
+      color: "bg-teal-50 text-teal-600"
     }
   ];
 

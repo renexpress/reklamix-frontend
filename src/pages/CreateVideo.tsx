@@ -153,10 +153,7 @@ const CreateVideo = () => {
       <main
         className="flex-grow pt-20"
         style={{
-          backgroundImage: 'url("/Header-background.webp")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center top',
-          backgroundRepeat: 'no-repeat',
+          background: 'linear-gradient(135deg, #e0f7f7 0%, #b2ebeb 30%, #7dd6d6 60%, #2AABAB 100%)',
         }}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 max-w-4xl">

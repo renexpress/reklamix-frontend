@@ -190,7 +190,7 @@ export const ResultDisplay: React.FC<ResultDisplayProps> = ({ jobId, onCreateNew
                     className={`
                       relative aspect-square rounded-lg overflow-hidden border-2 transition-all
                       ${selectedIndex === index
-                        ? 'border-[#FE5C02] ring-2 ring-[#FE5C02]/30'
+                        ? 'border-[#2AABAB] ring-2 ring-[#2AABAB]/30'
                         : 'border-transparent hover:border-gray-300'
                       }
                     `}
@@ -201,8 +201,8 @@ export const ResultDisplay: React.FC<ResultDisplayProps> = ({ jobId, onCreateNew
                       className="w-full h-full object-cover"
                     />
                     {selectedIndex === index && (
-                      <div className="absolute inset-0 bg-[#FE5C02]/20 flex items-center justify-center">
-                        <div className="w-6 h-6 rounded-full bg-[#FE5C02] flex items-center justify-center">
+                      <div className="absolute inset-0 bg-[#2AABAB]/20 flex items-center justify-center">
+                        <div className="w-6 h-6 rounded-full bg-[#2AABAB] flex items-center justify-center">
                           <Check className="w-4 h-4 text-white" />
                         </div>
                       </div>
@@ -224,7 +224,7 @@ export const ResultDisplay: React.FC<ResultDisplayProps> = ({ jobId, onCreateNew
                 size="lg"
                 onClick={() => handleDownload(images[selectedIndex].url, selectedIndex)}
                 disabled={downloadingIndex !== null}
-                className="bg-[#FE5C02] hover:bg-[#e55502]"
+                className="bg-[#2AABAB] hover:bg-[#228F8F]"
               >
                 <Download className="w-5 h-5 mr-2" />
                 {downloadingIndex === selectedIndex

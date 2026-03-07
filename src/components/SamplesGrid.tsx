@@ -48,20 +48,20 @@ const SamplesGrid = () => {
   return (
     <section className="py-20 sm:py-28 relative overflow-hidden" id="samples">
       {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white via-orange-50/30 to-white"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-white via-teal-50/30 to-white"></div>
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
       <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
 
       {/* Decorative Elements */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-[#FE5C02]/5 rounded-full blur-3xl"></div>
+      <div className="absolute top-20 left-10 w-72 h-72 bg-[#2AABAB]/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl"></div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#FE5C02]/10 border border-[#FE5C02]/20 mb-6">
-            <Sparkles className="w-4 h-4 text-[#FE5C02]" />
-            <span className="text-sm font-semibold text-[#FE5C02]">{t('samples.badge')}</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#2AABAB]/10 border border-[#2AABAB]/20 mb-6">
+            <Sparkles className="w-4 h-4 text-[#2AABAB]" />
+            <span className="text-sm font-semibold text-[#2AABAB]">{t('samples.badge')}</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             {t('samples.title')}
@@ -105,7 +105,7 @@ const SamplesGrid = () => {
 
                   {/* Corner Badge */}
                   <div className="absolute top-4 right-4 w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-lg">
-                    <ArrowRight className="w-5 h-5 text-[#FE5C02]" />
+                    <ArrowRight className="w-5 h-5 text-[#2AABAB]" />
                   </div>
                 </div>
               </div>
@@ -118,7 +118,7 @@ const SamplesGrid = () => {
           <div className="inline-flex flex-col items-center">
             <button
               onClick={() => navigate('/create')}
-              className="group flex items-center gap-3 px-8 py-4 bg-[#FE5C02] hover:bg-[#e55502] text-white font-semibold text-lg rounded-2xl transition-all duration-300 shadow-lg shadow-orange-500/30 hover:shadow-xl hover:shadow-orange-500/40 hover:-translate-y-0.5"
+              className="group flex items-center gap-3 px-8 py-4 bg-[#2AABAB] hover:bg-[#228F8F] text-white font-semibold text-lg rounded-2xl transition-all duration-300 shadow-lg shadow-teal-500/30 hover:shadow-xl hover:shadow-teal-500/40 hover:-translate-y-0.5"
             >
               <ImageIcon className="w-5 h-5" />
               {t('samples.cta')}

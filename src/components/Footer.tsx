@@ -15,7 +15,7 @@ const Footer = () => {
     <footer className="relative bg-gray-900 text-white overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent"></div>
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#FE5C02]/5 rounded-full blur-3xl"></div>
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#2AABAB]/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl"></div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
@@ -24,7 +24,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-4 space-y-6">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-xl bg-[#FE5C02] flex items-center justify-center shadow-lg shadow-orange-500/30">
+              <div className="w-12 h-12 rounded-xl bg-[#2AABAB] flex items-center justify-center shadow-lg shadow-teal-500/30">
                 <span className="text-white font-bold text-xl">R</span>
               </div>
               <span className="text-2xl font-bold">{t('footer.company_name')}</span>
@@ -35,7 +35,7 @@ const Footer = () => {
             <div className="flex gap-3">
               <a
                 href="#"
-                className="w-10 h-10 rounded-xl bg-gray-800 hover:bg-[#FE5C02] flex items-center justify-center transition-all duration-300 group"
+                className="w-10 h-10 rounded-xl bg-gray-800 hover:bg-[#2AABAB] flex items-center justify-center transition-all duration-300 group"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors" />
@@ -83,8 +83,8 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <Link to="/create" className="text-gray-400 hover:text-white transition-colors flex items-center gap-3 group">
-                  <div className="w-8 h-8 rounded-lg bg-[#FE5C02]/20 group-hover:bg-[#FE5C02] flex items-center justify-center transition-all duration-300">
-                    <Image className="w-4 h-4 text-[#FE5C02] group-hover:text-white transition-colors" />
+                  <div className="w-8 h-8 rounded-lg bg-[#2AABAB]/20 group-hover:bg-[#2AABAB] flex items-center justify-center transition-all duration-300">
+                    <Image className="w-4 h-4 text-[#2AABAB] group-hover:text-white transition-colors" />
                   </div>
                   {t('footer.service_images')}
                 </Link>
@@ -122,7 +122,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-2 text-sm text-gray-400">
-              <Sparkles className="w-4 h-4 text-[#FE5C02]" />
+              <Sparkles className="w-4 h-4 text-[#2AABAB]" />
               <span>© 2024 {t('footer.company_name')}. {t('footer.copyright')}.</span>
             </div>
             <div className="flex flex-wrap justify-center gap-6 text-sm">
@@ -134,7 +134,7 @@ const Footer = () => {
               </Link>
               <a
                 href="mailto:support@reklamix.ai"
-                className="text-gray-400 hover:text-[#FE5C02] transition-colors flex items-center gap-2"
+                className="text-gray-400 hover:text-[#2AABAB] transition-colors flex items-center gap-2"
               >
                 <Mail className="w-4 h-4" />
                 support@reklamix.ai

@@ -174,7 +174,7 @@ export const EmbeddedPaymentForm: React.FC<EmbeddedPaymentFormProps> = ({
         <Button
           type="submit"
           disabled={!stripe || !elements || isProcessing}
-          className="flex-1 bg-[#FE5C02] hover:bg-[#e55502]"
+          className="flex-1 bg-[#2AABAB] hover:bg-[#228F8F]"
         >
           {isProcessing ? (
             <>

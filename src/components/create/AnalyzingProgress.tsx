@@ -91,7 +91,7 @@ export const AnalyzingProgress: React.FC<AnalyzingProgressProps> = ({
     return (
       <div className="bg-white/95 backdrop-blur-sm rounded-2xl sm:rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
         {/* Header */}
-        <div className="bg-gradient-to-r from-red-500/10 via-red-50 to-orange-50 px-6 sm:px-8 py-6 border-b border-gray-100">
+        <div className="bg-gradient-to-r from-red-500/10 via-red-50 to-teal-50 px-6 sm:px-8 py-6 border-b border-gray-100">
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 rounded-xl bg-red-500 flex items-center justify-center shadow-lg shadow-red-500/30">
               <AlertCircle className="w-6 h-6 text-white" />
@@ -132,7 +132,7 @@ export const AnalyzingProgress: React.FC<AnalyzingProgressProps> = ({
               {onRetry && (
                 <Button
                   onClick={onRetry}
-                  className="bg-[#FE5C02] hover:bg-[#e55502] text-white px-6"
+                  className="bg-[#2AABAB] hover:bg-[#228F8F] text-white px-6"
                 >
                   <RefreshCw className="w-4 h-4 mr-2" />
                   {t('common.retry')}
@@ -158,9 +158,9 @@ export const AnalyzingProgress: React.FC<AnalyzingProgressProps> = ({
   return (
     <div className="bg-white/95 backdrop-blur-sm rounded-2xl sm:rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
       {/* Header */}
-      <div className="bg-gradient-to-r from-[#FE5C02]/10 via-orange-50 to-amber-50 px-6 sm:px-8 py-6 border-b border-gray-100">
+      <div className="bg-gradient-to-r from-[#2AABAB]/10 via-teal-50 to-teal-50 px-6 sm:px-8 py-6 border-b border-gray-100">
         <div className="flex items-center gap-3">
-          <div className="w-12 h-12 rounded-xl bg-[#FE5C02] flex items-center justify-center shadow-lg shadow-orange-500/30 relative">
+          <div className="w-12 h-12 rounded-xl bg-[#2AABAB] flex items-center justify-center shadow-lg shadow-teal-500/30 relative">
             <Brain className="w-6 h-6 text-white" />
             <div className="absolute -top-1 -right-1 w-4 h-4 bg-green-500 rounded-full flex items-center justify-center">
               <Zap className="w-2.5 h-2.5 text-white" />
@@ -183,13 +183,13 @@ export const AnalyzingProgress: React.FC<AnalyzingProgressProps> = ({
           {/* Animated Icon */}
           <div className="relative mb-8">
             {/* Outer pulse ring */}
-            <div className="absolute inset-0 w-32 h-32 rounded-full bg-[#FE5C02]/10 animate-ping" style={{ animationDuration: '2s' }} />
+            <div className="absolute inset-0 w-32 h-32 rounded-full bg-[#2AABAB]/10 animate-ping" style={{ animationDuration: '2s' }} />
 
             {/* Middle ring */}
-            <div className="absolute inset-2 w-28 h-28 rounded-full bg-[#FE5C02]/20 animate-pulse" />
+            <div className="absolute inset-2 w-28 h-28 rounded-full bg-[#2AABAB]/20 animate-pulse" />
 
             {/* Inner circle with icon */}
-            <div className="relative w-32 h-32 rounded-full bg-gradient-to-br from-[#FE5C02] to-orange-600 flex items-center justify-center shadow-2xl shadow-orange-500/40">
+            <div className="relative w-32 h-32 rounded-full bg-gradient-to-br from-[#2AABAB] to-teal-600 flex items-center justify-center shadow-2xl shadow-teal-500/40">
               <Loader2 className="w-14 h-14 text-white animate-spin" />
               <Sparkles className="w-6 h-6 text-yellow-200 absolute top-4 right-4 animate-pulse" />
             </div>
@@ -263,7 +263,7 @@ const ProgressStep: React.FC<ProgressStepProps> = ({
           ${isComplete
             ? 'bg-green-500 text-white'
             : isActive
-              ? 'bg-[#FE5C02] text-white shadow-lg shadow-orange-500/30 ring-4 ring-orange-100'
+              ? 'bg-[#2AABAB] text-white shadow-lg shadow-teal-500/30 ring-4 ring-teal-100'
               : 'bg-gray-100 text-gray-400'
           }
         `}
@@ -273,7 +273,7 @@ const ProgressStep: React.FC<ProgressStepProps> = ({
       <span
         className={`
           text-xs font-medium text-center
-          ${isActive ? 'text-[#FE5C02]' : isComplete ? 'text-green-600' : 'text-gray-400'}
+          ${isActive ? 'text-[#2AABAB]' : isComplete ? 'text-green-600' : 'text-gray-400'}
         `}
       >
         {label}

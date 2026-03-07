@@ -184,9 +184,9 @@ const VideoCard: React.FC<{
             </div>
           </>
         ) : isProcessing ? (
-          <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-orange-100 to-amber-100">
-            <div className="animate-spin rounded-full h-10 w-10 border-2 border-orange-500 border-t-transparent mb-2" />
-            <span className="text-sm text-orange-600 font-medium">
+          <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-teal-100 to-teal-100">
+            <div className="animate-spin rounded-full h-10 w-10 border-2 border-teal-500 border-t-transparent mb-2" />
+            <span className="text-sm text-teal-600 font-medium">
               {t('myResults.processing')}
             </span>
           </div>
@@ -197,7 +197,7 @@ const VideoCard: React.FC<{
         )}
 
         {/* Video Badge */}
-        <div className="absolute top-3 left-3 bg-orange-500 text-white px-2.5 py-1 rounded-full text-xs font-medium flex items-center gap-1">
+        <div className="absolute top-3 left-3 bg-teal-500 text-white px-2.5 py-1 rounded-full text-xs font-medium flex items-center gap-1">
           <Video className="w-3 h-3" />
           VIDEO
         </div>
@@ -537,7 +537,7 @@ const VideoPlayerModal: React.FC<{
       <DialogContent className="max-w-3xl w-full max-h-[90vh] p-0 overflow-hidden">
         <DialogHeader className="p-4 border-b">
           <DialogTitle className="flex items-center gap-2">
-            <Video className="w-5 h-5 text-orange-500" />
+            <Video className="w-5 h-5 text-teal-500" />
             {t('myResults.generatedVideo')}
           </DialogTitle>
         </DialogHeader>
@@ -736,8 +736,8 @@ const MyResults: React.FC = () => {
               {results.videos.length > 0 && (
                 <section>
                   <div className="flex items-center gap-3 mb-6">
-                    <div className="bg-orange-100 rounded-lg p-2">
-                      <Video className="w-5 h-5 text-orange-600" />
+                    <div className="bg-teal-100 rounded-lg p-2">
+                      <Video className="w-5 h-5 text-teal-600" />
                     </div>
                     <div>
                       <h2 className="text-xl font-semibold text-gray-800">

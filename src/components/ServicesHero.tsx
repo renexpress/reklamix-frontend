@@ -8,7 +8,7 @@ const ServicesHero = () => {
       className="pt-20 pb-12 sm:pt-24 sm:pb-16 bg-gradient-to-br from-gray-900 to-gray-800 relative overflow-hidden"
       id="services-hero"
     >
-      <div className="absolute inset-0 bg-[url('/Header-background.webp')] bg-cover bg-center opacity-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-teal-500/10 to-teal-300/10"></div>
       <div className="absolute top-10 right-10 w-64 h-64 bg-pulse-500/20 rounded-full blur-3xl"></div>
       <div className="absolute bottom-10 left-10 w-48 h-48 bg-blue-500/20 rounded-full blur-3xl"></div>
       

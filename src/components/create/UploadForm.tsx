@@ -235,7 +235,7 @@ export const UploadForm: React.FC<UploadFormProps> = ({ onJobCreated, onStartAna
                   className="w-full h-full object-cover rounded-xl border-2 border-gray-200"
                 />
                 {index === 0 && (
-                  <div className="absolute top-1 left-1 px-1.5 py-0.5 bg-[#FE5C02] text-white text-xs font-medium rounded">
+                  <div className="absolute top-1 left-1 px-1.5 py-0.5 bg-[#2AABAB] text-white text-xs font-medium rounded">
                     {t('create.upload.primary_image')}
                   </div>
                 )}
@@ -253,7 +253,7 @@ export const UploadForm: React.FC<UploadFormProps> = ({ onJobCreated, onStartAna
             {selectedImages.length < MAX_IMAGES && (
               <label
                 htmlFor="add-more-images"
-                className="aspect-square flex flex-col items-center justify-center rounded-xl border-2 border-dashed border-gray-300 hover:border-[#FE5C02] hover:bg-orange-50/30 cursor-pointer transition-all"
+                className="aspect-square flex flex-col items-center justify-center rounded-xl border-2 border-dashed border-gray-300 hover:border-[#2AABAB] hover:bg-teal-50/30 cursor-pointer transition-all"
               >
                 <Plus className="w-6 h-6 text-gray-400" />
                 <span className="text-xs text-gray-400 mt-1">{t('create.upload.add_more')}</span>
@@ -277,8 +277,8 @@ export const UploadForm: React.FC<UploadFormProps> = ({ onJobCreated, onStartAna
             className={`
               relative border-2 border-dashed rounded-2xl transition-all duration-300 cursor-pointer
               ${isDragging
-                ? 'border-[#FE5C02] bg-orange-50'
-                : 'border-gray-200 hover:border-[#FE5C02]/50 hover:bg-orange-50/30'
+                ? 'border-[#2AABAB] bg-teal-50'
+                : 'border-gray-200 hover:border-[#2AABAB]/50 hover:bg-teal-50/30'
               }
             `}
             onDragOver={handleDragOver}
@@ -289,18 +289,18 @@ export const UploadForm: React.FC<UploadFormProps> = ({ onJobCreated, onStartAna
               <div className="flex flex-col items-center text-center">
                 <div className={`
                   w-20 h-20 rounded-2xl flex items-center justify-center mb-4 transition-all
-                  ${isDragging ? 'bg-[#FE5C02] scale-110' : 'bg-gradient-to-br from-orange-100 to-amber-100'}
+                  ${isDragging ? 'bg-[#2AABAB] scale-110' : 'bg-gradient-to-br from-teal-100 to-teal-100'}
                 `}>
-                  <Upload className={`w-10 h-10 transition-colors ${isDragging ? 'text-white' : 'text-[#FE5C02]'}`} />
+                  <Upload className={`w-10 h-10 transition-colors ${isDragging ? 'text-white' : 'text-[#2AABAB]'}`} />
                 </div>
                 <div className="text-base sm:text-lg mb-2">
-                  <span className="font-semibold text-[#FE5C02]">{t('create.upload.click_to_select')}</span>
+                  <span className="font-semibold text-[#2AABAB]">{t('create.upload.click_to_select')}</span>
                   <span className="text-gray-500"> {t('create.upload.or_drag')}</span>
                 </div>
                 <p className="text-sm text-gray-400 mb-2">
                   {t('create.upload.file_formats')}
                 </p>
-                <p className="text-sm text-[#FE5C02] font-medium">
+                <p className="text-sm text-[#2AABAB] font-medium">
                   {t('create.upload.multi_image_hint', { max: MAX_IMAGES })}
                 </p>
               </div>
@@ -347,22 +347,22 @@ export const UploadForm: React.FC<UploadFormProps> = ({ onJobCreated, onStartAna
             className={`
               relative p-5 rounded-2xl text-left transition-all duration-300 group overflow-hidden
               ${selectedMode === 'marketplace'
-                ? 'bg-gradient-to-br from-[#FE5C02]/10 to-orange-50 border-2 border-[#FE5C02] shadow-lg shadow-orange-500/10'
+                ? 'bg-gradient-to-br from-[#2AABAB]/10 to-teal-50 border-2 border-[#2AABAB] shadow-lg shadow-teal-500/10'
                 : 'bg-white border-2 border-gray-100 hover:border-gray-200 hover:shadow-md'
               }
             `}
           >
             {selectedMode === 'marketplace' && (
-              <div className="absolute top-3 right-3 w-6 h-6 bg-[#FE5C02] rounded-full flex items-center justify-center">
+              <div className="absolute top-3 right-3 w-6 h-6 bg-[#2AABAB] rounded-full flex items-center justify-center">
                 <Check className="w-4 h-4 text-white" />
               </div>
             )}
             <div className="space-y-3">
               <div className={`
                 w-12 h-12 rounded-xl flex items-center justify-center transition-all
-                ${selectedMode === 'marketplace' ? 'bg-[#FE5C02]' : 'bg-gray-100 group-hover:bg-orange-100'}
+                ${selectedMode === 'marketplace' ? 'bg-[#2AABAB]' : 'bg-gray-100 group-hover:bg-teal-100'}
               `}>
-                <ShoppingBag className={`w-6 h-6 ${selectedMode === 'marketplace' ? 'text-white' : 'text-gray-500 group-hover:text-[#FE5C02]'}`} />
+                <ShoppingBag className={`w-6 h-6 ${selectedMode === 'marketplace' ? 'text-white' : 'text-gray-500 group-hover:text-[#2AABAB]'}`} />
               </div>
               <div className="font-bold text-lg text-gray-900">{t('create.upload.mode_marketplace')}</div>
               <div className="relative h-36 rounded-xl overflow-hidden bg-gray-100">
@@ -483,8 +483,8 @@ export const UploadForm: React.FC<UploadFormProps> = ({ onJobCreated, onStartAna
               className={`
                 w-12 h-12 rounded-xl font-bold text-lg transition-all
                 ${selectedImageCount === count
-                  ? 'bg-[#FE5C02] text-white shadow-lg shadow-orange-500/30'
-                  : 'bg-gray-100 text-gray-600 hover:bg-orange-100 hover:text-[#FE5C02]'
+                  ? 'bg-[#2AABAB] text-white shadow-lg shadow-teal-500/30'
+                  : 'bg-gray-100 text-gray-600 hover:bg-teal-100 hover:text-[#2AABAB]'
                 }
               `}
             >
@@ -494,7 +494,7 @@ export const UploadForm: React.FC<UploadFormProps> = ({ onJobCreated, onStartAna
         </div>
         <p className="text-sm text-gray-400 flex items-center gap-2">
           {t('create.upload.image_count_hint', { count: selectedImageCount })}
-          <span className="text-[#FE5C02] font-medium">
+          <span className="text-[#2AABAB] font-medium">
             {selectedImageCount} {selectedImageCount === 1 ? t('create.upload.credit') : t('create.upload.credits')}
           </span>
         </p>
@@ -510,7 +510,7 @@ export const UploadForm: React.FC<UploadFormProps> = ({ onJobCreated, onStartAna
           id="product_info"
           placeholder={t('create.upload.product_info_placeholder')}
           rows={3}
-          className="resize-none rounded-xl border-gray-200 focus:border-[#FE5C02] focus:ring-[#FE5C02]/20 text-base"
+          className="resize-none rounded-xl border-gray-200 focus:border-[#2AABAB] focus:ring-[#2AABAB]/20 text-base"
           {...register('product_info_text')}
           disabled={createJobMutation.isPending}
         />
@@ -526,10 +526,10 @@ export const UploadForm: React.FC<UploadFormProps> = ({ onJobCreated, onStartAna
         className="
           w-full flex items-center justify-center gap-3 py-4 px-6 rounded-xl
           text-white font-semibold text-lg
-          bg-[#FE5C02] hover:bg-[#e55502]
+          bg-[#2AABAB] hover:bg-[#228F8F]
           disabled:opacity-50 disabled:cursor-not-allowed
           transition-all duration-300
-          shadow-lg shadow-orange-500/30 hover:shadow-xl hover:shadow-orange-500/40
+          shadow-lg shadow-teal-500/30 hover:shadow-xl hover:shadow-teal-500/40
           group
         "
       >

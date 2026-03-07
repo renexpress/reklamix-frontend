@@ -13,37 +13,31 @@ const testimonials: TestimonialProps[] = [{
   content: "Atlas transformed our production line, handling repetitive tasks while our team focuses on innovation. 30% increase in output within three months.",
   author: "Sarah Chen",
   role: "VP of Operations, Axion Manufacturing",
-  gradient: "from-blue-700 via-indigo-800 to-purple-900",
-  backgroundImage: "/background-section1.png"
+  gradient: "from-teal-700 via-teal-800 to-teal-900",
 }, {
   content: "Implementing Atlas in our fulfillment centers reduced workplace injuries by 40% while improving order accuracy. The learning capabilities are remarkable.",
   author: "Michael Rodriguez",
   role: "Director of Logistics, GlobalShip",
-  gradient: "from-indigo-900 via-purple-800 to-orange-500",
-  backgroundImage: "/background-section2.png"
+  gradient: "from-teal-900 via-teal-700 to-teal-500",
 }, {
   content: "Atlas adapted to our lab protocols faster than any system we've used. It's like having another researcher who never gets tired and maintains perfect precision.",
   author: "Dr. Amara Patel",
   role: "Lead Scientist, BioAdvance Research",
-  gradient: "from-purple-800 via-pink-700 to-red-500",
-  backgroundImage: "/background-section3.png"
+  gradient: "from-teal-800 via-teal-600 to-teal-500",
 }, {
   content: "As a mid-size business, we never thought advanced robotics would be accessible to us. Atlas changed that equation entirely with its versatility and ease of deployment.",
   author: "Jason Lee",
   role: "CEO, Innovative Solutions Inc.",
-  gradient: "from-orange-600 via-red-500 to-purple-600",
-  backgroundImage: "/background-section1.png"
+  gradient: "from-teal-600 via-teal-700 to-teal-900",
 }];
 
 const TestimonialCard = ({
   content,
   author,
   role,
-  backgroundImage = "/background-section1.png"
+  gradient,
 }: TestimonialProps) => {
-  return <div className="bg-cover bg-center rounded-lg p-8 h-full flex flex-col justify-between text-white transform transition-transform duration-300 hover:-translate-y-2 relative overflow-hidden" style={{
-    backgroundImage: `url('${backgroundImage}')`
-  }}>
+  return <div className={`bg-gradient-to-br ${gradient} rounded-lg p-8 h-full flex flex-col justify-between text-white transform transition-transform duration-300 hover:-translate-y-2 relative overflow-hidden`}>
       <div className="absolute top-0 right-0 w-24 h-24 bg-white z-10"></div>
       
       <div className="relative z-0">

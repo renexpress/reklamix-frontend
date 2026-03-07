@@ -67,7 +67,7 @@ export const EmbeddedPaymentWrapper: React.FC<EmbeddedPaymentWrapperProps> = ({
   if (createPaymentIntentMutation.isPending) {
     return (
       <div className="flex flex-col items-center justify-center py-12 space-y-4">
-        <Loader2 className="w-8 h-8 animate-spin text-[#FE5C02]" />
+        <Loader2 className="w-8 h-8 animate-spin text-[#2AABAB]" />
         <p className="text-gray-500">
           {t('payment.embedded.initializing', 'Initializing payment...')}
         </p>
@@ -100,7 +100,7 @@ export const EmbeddedPaymentWrapper: React.FC<EmbeddedPaymentWrapperProps> = ({
   if (!clientSecret) {
     return (
       <div className="flex flex-col items-center justify-center py-12 space-y-4">
-        <Loader2 className="w-8 h-8 animate-spin text-[#FE5C02]" />
+        <Loader2 className="w-8 h-8 animate-spin text-[#2AABAB]" />
         <p className="text-gray-500">
           {t('payment.embedded.preparing', 'Preparing payment...')}
         </p>

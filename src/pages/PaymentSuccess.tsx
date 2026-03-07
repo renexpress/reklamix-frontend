@@ -48,10 +48,7 @@ const PaymentSuccess = () => {
       <main
         className="flex-grow pt-20 flex items-center justify-center"
         style={{
-          backgroundImage: 'url("/Header-background.webp")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center top',
-          backgroundRepeat: 'no-repeat',
+          background: 'linear-gradient(135deg, #e0f7f7 0%, #b2ebeb 30%, #7dd6d6 60%, #2AABAB 100%)',
         }}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 max-w-2xl">
@@ -99,7 +96,7 @@ const PaymentSuccess = () => {
                   <div className="flex flex-col sm:flex-row gap-3">
                     <Button
                       onClick={handleGoToCreate}
-                      className="flex-1 bg-[#FE5C02] hover:bg-[#e55502] text-white py-6"
+                      className="flex-1 bg-[#2AABAB] hover:bg-[#228F8F] text-white py-6"
                     >
                       <Sparkles className="w-5 h-5 mr-2" />
                       {t('payment.success.create_button', 'Create Images')}

@@ -43,8 +43,8 @@ const Dashboard = () => {
       name: 'Total Generations',
       value: logsData?.count || 0,
       icon: FileText,
-      color: 'text-orange-600',
-      bgColor: 'bg-orange-50',
+      color: 'text-teal-600',
+      bgColor: 'bg-teal-50',
       loading: logsLoading
     },
   ];

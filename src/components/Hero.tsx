@@ -80,10 +80,7 @@ const Hero = () => {
       className="overflow-hidden relative"
       id="hero"
       style={{
-        backgroundImage: 'url("/Header-background.webp")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center 30%',
-        backgroundRepeat: 'no-repeat',
+        background: 'linear-gradient(135deg, #e0f7f7 0%, #b2ebeb 30%, #7dd6d6 60%, #2AABAB 100%)',
       }}
     >
       {/* Gradient Overlay */}
@@ -105,9 +102,9 @@ const Hero = () => {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/90 backdrop-blur-sm border border-gray-200 shadow-lg mb-6 opacity-0 animate-fade-in"
               style={{ animationDelay: "0.1s" }}
             >
-              <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#FE5C02] text-white text-xs font-bold">AI</span>
+              <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#2AABAB] text-white text-xs font-bold">AI</span>
               <span className="text-sm font-medium text-gray-700">AI-Powered Product Images</span>
-              <Sparkles className="w-4 h-4 text-[#FE5C02]" />
+              <Sparkles className="w-4 h-4 text-[#2AABAB]" />
             </div>
 
             {/* Main Title */}
@@ -132,8 +129,8 @@ const Hero = () => {
               style={{ animationDelay: "0.6s" }}
             >
               <div className="flex items-center gap-2">
-                <div className="w-10 h-10 rounded-xl bg-[#FE5C02]/10 flex items-center justify-center">
-                  <Zap className="w-5 h-5 text-[#FE5C02]" />
+                <div className="w-10 h-10 rounded-xl bg-[#2AABAB]/10 flex items-center justify-center">
+                  <Zap className="w-5 h-5 text-[#2AABAB]" />
                 </div>
                 <div>
                   <div className="text-lg font-bold text-gray-900">30s</div>
@@ -158,7 +155,7 @@ const Hero = () => {
             >
               <Link
                 to="/create"
-                className="group flex items-center justify-center gap-2 px-6 py-4 bg-[#FE5C02] hover:bg-[#e55502] text-white font-semibold rounded-2xl transition-all duration-300 shadow-lg shadow-orange-500/30 hover:shadow-xl hover:shadow-orange-500/40 hover:-translate-y-0.5"
+                className="group flex items-center justify-center gap-2 px-6 py-4 bg-[#2AABAB] hover:bg-[#228F8F] text-white font-semibold rounded-2xl transition-all duration-300 shadow-lg shadow-teal-500/30 hover:shadow-xl hover:shadow-teal-500/40 hover:-translate-y-0.5"
               >
                 <Image className="w-5 h-5" />
                 {t('hero.cta_create')}
@@ -186,13 +183,13 @@ const Hero = () => {
           {/* Right Content - Hero Image */}
           <div className="w-full lg:w-1/2 relative mt-8 lg:mt-0">
             {/* Decorative Elements */}
-            <div className="absolute -top-4 -left-4 w-24 h-24 bg-[#FE5C02]/10 rounded-full blur-2xl"></div>
+            <div className="absolute -top-4 -left-4 w-24 h-24 bg-[#2AABAB]/10 rounded-full blur-2xl"></div>
             <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-purple-500/10 rounded-full blur-2xl"></div>
 
             {/* Image Container */}
             <div className="relative transition-all duration-500 ease-out">
               {/* Glow Effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-[#FE5C02]/20 to-purple-500/20 rounded-2xl sm:rounded-3xl blur-xl opacity-60 -z-10 translate-y-2"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#2AABAB]/20 to-purple-500/20 rounded-2xl sm:rounded-3xl blur-xl opacity-60 -z-10 translate-y-2"></div>
 
               {/* Main Image Card */}
               <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl shadow-2xl border border-white/50 bg-white">
@@ -218,7 +215,7 @@ const Hero = () => {
                       <div className="text-white font-semibold">{t('hero.sample_title')}</div>
                     </div>
                     <div className="flex -space-x-2">
-                      <div className="w-8 h-8 rounded-full bg-[#FE5C02] flex items-center justify-center border-2 border-white">
+                      <div className="w-8 h-8 rounded-full bg-[#2AABAB] flex items-center justify-center border-2 border-white">
                         <Image className="w-4 h-4 text-white" />
                       </div>
                       <div className="w-8 h-8 rounded-full bg-purple-600 flex items-center justify-center border-2 border-white">
