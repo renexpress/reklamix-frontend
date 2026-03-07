@@ -65,17 +65,17 @@ export default {
 				},
 				// Custom colors for Reklamix AI
 				pulse: {
-					"50": "#fff7ed",
-					"100": "#ffedd5",
-					"200": "#fed7aa",
-					"300": "#fdba74",
-					"400": "#fb923c",
-					"500": "#f97316", // Primary orange
-					"600": "#ea580c",
-					"700": "#c2410c",
-					"800": "#9a3412",
-					"900": "#7c2d12",
-					"950": "#431407",
+					"50": "#f0fdfd",
+					"100": "#ccf2f2",
+					"200": "#99e5e5",
+					"300": "#66d8d8",
+					"400": "#40c9c9",
+					"500": "#2AABAB", // Primary teal
+					"600": "#228f8f",
+					"700": "#1a6e6e",
+					"800": "#134f4f",
+					"900": "#0d3636",
+					"950": "#071f1f",
 				},
 				dark: {
 					"900": "#121212", // Almost black
@@ -137,9 +137,9 @@ export default {
 				'float': 'float 6s ease-in-out infinite'
 			},
 			backgroundImage: {
-				'hero-gradient': 'linear-gradient(90deg, hsla(24, 100%, 83%, 1) 0%, hsla(341, 91%, 68%, 1) 100%)',
-				'hero-gradient-2': 'linear-gradient(90deg, hsla(39, 100%, 77%, 1) 0%, hsla(22, 90%, 57%, 1) 100%)',
-				'pulse-gradient': 'linear-gradient(180deg, rgba(249,115,22,0.8) 0%, rgba(249,115,22,0) 100%)',
+				'hero-gradient': 'linear-gradient(90deg, hsla(180, 50%, 80%, 1) 0%, hsla(180, 60%, 42%, 1) 100%)',
+				'hero-gradient-2': 'linear-gradient(90deg, hsla(180, 40%, 75%, 1) 0%, hsla(180, 60%, 42%, 1) 100%)',
+				'pulse-gradient': 'linear-gradient(180deg, rgba(42,171,171,0.8) 0%, rgba(42,171,171,0) 100%)',
 			},
 			fontFamily: {
 				'sans': ['Inter', 'sans-serif'],
