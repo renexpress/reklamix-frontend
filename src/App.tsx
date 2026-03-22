@@ -13,6 +13,9 @@ import MetaTags from "@/components/MetaTags";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Requisites from "./pages/Requisites";
+import Oferta from "./pages/Oferta";
+import Privacy from "./pages/Privacy";
 import NotFound from "./pages/NotFound";
 
 // Auth pages
@@ -68,6 +71,9 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/requisites" element={<Requisites />} />
+            <Route path="/oferta" element={<Oferta />} />
+            <Route path="/privacy" element={<Privacy />} />
 
             {/* Auth routes */}
             <Route path="/login" element={<Login />} />

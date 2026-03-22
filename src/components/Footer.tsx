@@ -126,11 +126,14 @@ const Footer = () => {
               <span>© 2024 {t('footer.company_name')}. {t('footer.copyright')}.</span>
             </div>
             <div className="flex flex-wrap justify-center gap-6 text-sm">
-              <Link to="#" className="text-gray-400 hover:text-white transition-colors">
-                {t('footer.privacy')}
+              <Link to="/requisites" className="text-gray-400 hover:text-white transition-colors">
+                Реквизиты
               </Link>
-              <Link to="#" className="text-gray-400 hover:text-white transition-colors">
-                {t('footer.terms')}
+              <Link to="/oferta" className="text-gray-400 hover:text-white transition-colors">
+                Оферта
+              </Link>
+              <Link to="/privacy" className="text-gray-400 hover:text-white transition-colors">
+                {t('footer.privacy')}
               </Link>
               <a
                 href="mailto:support@reklamix.ai"
