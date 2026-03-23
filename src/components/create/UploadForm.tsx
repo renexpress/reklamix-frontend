@@ -22,7 +22,7 @@ type UploadFormData = {
   uploaded_images: any;
   product_info_text?: string;
   generation_mode: 'marketplace' | 'advertisement';
-  language: 'uz' | 'ru' | 'tr' | 'en';
+  language: 'uz' | 'ru' | 'tr' | 'en' | 'ar';
   image_count: number;
 };
 
@@ -52,7 +52,7 @@ export const UploadForm: React.FC<UploadFormProps> = ({ onJobCreated, onStartAna
     generation_mode: z.enum(['marketplace', 'advertisement'], {
       required_error: 'Please select a generation mode',
     }),
-    language: z.enum(['uz', 'ru', 'tr', 'en'], {
+    language: z.enum(['uz', 'ru', 'tr', 'en', 'ar'], {
       required_error: 'Please select a language',
     }),
     image_count: z.number().min(1).max(6).default(1),
@@ -211,6 +211,7 @@ export const UploadForm: React.FC<UploadFormProps> = ({ onJobCreated, onStartAna
     { code: 'ru', name: t('create.upload.language_russian'), flag: '\u{1F1F7}\u{1F1FA}' },
     { code: 'tr', name: t('create.upload.language_turkish'), flag: '\u{1F1F9}\u{1F1F7}' },
     { code: 'en', name: t('create.upload.language_english'), flag: '\u{1F1EC}\u{1F1E7}' },
+    { code: 'ar', name: t('create.upload.language_arabic'), flag: '\u{1F1F8}\u{1F1E6}' },
   ];
 
   return (
@@ -447,7 +448,7 @@ export const UploadForm: React.FC<UploadFormProps> = ({ onJobCreated, onStartAna
             <button
               key={lang.code}
               type="button"
-              onClick={() => setValue('language', lang.code as 'uz' | 'ru' | 'tr' | 'en')}
+              onClick={() => setValue('language', lang.code as 'uz' | 'ru' | 'tr' | 'en' | 'ar')}
               disabled={createJobMutation.isPending}
               className={`
                 flex items-center gap-2 px-4 py-2.5 rounded-xl font-medium transition-all

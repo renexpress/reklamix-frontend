@@ -239,6 +239,7 @@
       "language_russian": "Russian",
       "language_turkish": "Turkish",
       "language_english": "English",
+      "language_arabic": "Arabic",
       "image_count_label": "Number of Images",
       "image_count_hint": "You will generate {{count}} image(s). Cost:",
       "credit": "credit",

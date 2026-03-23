@@ -239,6 +239,7 @@
       "language_russian": "Русский",
       "language_turkish": "Турецкий",
       "language_english": "Английский",
+      "language_arabic": "Арабский",
       "image_count_label": "Количество изображений",
       "image_count_hint": "Вы создадите {{count}} изображение(й). Стоимость:",
       "credit": "кредит",
