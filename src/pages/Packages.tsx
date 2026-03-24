@@ -206,9 +206,9 @@ const Packages = () => {
                       <CardTitle className="text-xl">{pkg.name_ru || pkg.name}</CardTitle>
                       <CardDescription className="mt-2">
                         <span className="text-4xl font-bold text-foreground">
-                          {(parseFloat(pkg.price_uzs) / 1000).toFixed(0)}k
+                          {Math.round(parseFloat(pkg.price_uzs) / 625)}
                         </span>
-                        <span className="text-muted-foreground ml-1">UZS</span>
+                        <span className="text-muted-foreground ml-1">₺</span>
                       </CardDescription>
                     </CardHeader>
 
