@@ -104,7 +104,7 @@ export const EmbeddedPaymentForm: React.FC<EmbeddedPaymentFormProps> = ({
   // Format price for display
   const formatPrice = (priceUzs: string) => {
     const numPrice = parseFloat(priceUzs);
-    return `${Math.round(numPrice / 625)} ₺`;
+    return `${(numPrice / 1000).toFixed(0)}k UZS`;
   };
 
   return (
