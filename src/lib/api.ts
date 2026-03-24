@@ -209,6 +209,9 @@ export const paymentsApi = {
 
 // Admin API
 export const adminApi = {
+  // Analytics
+  getAnalytics: () => apiClient.get('/admin/analytics/'),
+
   // Users
   getUsers: (params?: { search?: string; page?: number; limit?: number }) =>
     apiClient.get('/admin/users/', { params }),

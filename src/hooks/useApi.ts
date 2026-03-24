@@ -285,6 +285,18 @@ export const useMyPayments = (options?: UseQueryOptions<any>) => {
 
 // ============ Admin Hooks ============
 
+export const useAdminAnalytics = (options?: UseQueryOptions<any>) => {
+  return useQuery({
+    queryKey: ['admin', 'analytics'],
+    queryFn: async () => {
+      const { data } = await adminApi.getAnalytics();
+      return data;
+    },
+    staleTime: 60000, // 1 minute
+    ...options,
+  });
+};
+
 export const useAdminUsers = (search?: string, page?: number, limit?: number, options?: UseQueryOptions<any>) => {
   return useQuery({
     queryKey: queryKeys.adminUsers(search, page),
